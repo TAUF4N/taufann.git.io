@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemberitahuan Warehouse</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .report-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.container {
+    background-image: url();
+}
+
+/* Kustomisasi sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 200px;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar li a {
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.notification {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.notification .title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.notification .message {
+    margin-bottom: 5px;
+}
+
+.notification .timestamp {
+    font-size: 12px;
+    color: #888;
+}
+
+ /* footer */
+ .footer {
+            width: 100%;
+            background-image: linear-gradient(180deg, #505467 0, #1f3259 50%, #00154b 100%);
+            margin-top: 50px;
+            border-top: 1px solid whitesmoke; /* Menambahkan pemisah warna tipis di bagian atas footer */
+        }
+    
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+    
+        /* Mengubah warna ikon saat tidak diklik */
+        .social-links a {
+            color: white;
+        }
+    
+        /* Menghilangkan gaya default tautan */
+        .social-links a {
+            text-decoration: none;
+        }
+    
+        h4 {
+            color: white;
+        }
+        
+        .footer ul li a {
+            text-transform: capitalize;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <br>
+        <ul class="list-unstyled">
+          <li><a href="Index.html" style="color: black;"><i class="fas fas fa-home"></i> Beranda</a></li>
+          <li><a href="informasi.html" style="color: black;"><i class="fas fa-warehouse"></i>Informasi Gudang</a></li>
+          <li><a href="pemberitahuan.html" style="color: black;"><i class="fas fas fa-bullhorn"></i>Pemberitahuan</a></li>
+          <li><a href="statistik.html" style="color: black;"><i class="far fa-chart-bar"></i>Statistik & Grafik</a></li>
+          <li><a href="laporan.html" style="color: black;"><i class="far fa-file-alt"></i>Laporan</a></li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <div class="notification">
+            <div class="title">Pemberitahuan Penting</div>
+            <div class="message">Stok produk A hampir habis. Segera lakukan pemesanan tambahan.</div>
+            <div class="timestamp">25 Juni 2023, 09:30 AM</div>
+        </div>
+
+        <div class="notification">
+            <div class="title">Pemberitahuan</div>
+            <div class="message">Pesanan B sedang diproses. Estimasi selesai: 27 Juni 2023.</div>
+            <div class="timestamp">25 Juni 2023, 11:45 AM</div>
+        </div>
+
+        <div class="notification">
+            <div class="title">Pemberitahuan Pemasokan</div>
+            <div class="message">Pesanan C sedang dalam perjalanan. Estimasi sampai: 8 Juli 2023.</div>
+            <div class="timestamp">30 Juni 2023, 13:50 PM</div>
+        </div>
+
+        <div class="notification">
+            <div class="title">Pemberitahuan Urgent</div>
+            <div class="message">Perlu tindakan segera: Stok produk C kosong. Mohon lakukan restock segera.</div>
+            <div class="timestamp">25 Juni 2023, 02:15 PM</div>
+        </div>
+
+        <!-- Penambahan data pemasokan -->
+        <div class="notification">
+            <div class="title">Data Pemasokan</div>
+            <div class="message">Data Pemasokan Baru:</div>
+            <div class="timestamp">9 Juli 2023, 10:00 AM</div>
+            <div class="message">Nama Pemasok: XYZ Supplier</div>
+            <div class="message">Tanggal Pemasokan: 9 Juli 2023</div>
+            <div class="message">Barang: Produk D</div>
+            <div class="message">Jumlah: 100</div>
+        </div>
+    </div>
+
+    
+
+       <!--ini adalah footer-->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h4>Ikuti Kami</h4>
+                <div class="social-links" style="color: wheat;">
+                    <a href="/"><i class="fab fa-facebook"></i></a>
+                    <a href="/"><i class="fab fa-instagram"></i></a>
+                    <a href="/"><i class="fab fa-whatsapp"></i></a>
+                    <a href="/"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h4>Layanan</h4>
+                <ul style="color: wheat;">
+                  <li><a href="#">Pengiriman</a></li>
+                  <li><a href="#">Penyimpanan</a></li>
+                  <li><a href="#">Logistik</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h4>Industri</h4>
+                <ul style="color: wheat;">
+                  <li><a href="#">Otomotif</a></li>
+                  <li><a href="#">Elektronik</a></li>
+                  <li><a href="#">Fashion</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h4>Kontak Kami</h4>
+                <ul style="color: wheat;">
+                  <li><i class="fas fa-map-marker-alt"></i> Alamat: Jalan Raya No. 123, Kota, Negara</li>
+                  <li><i class="fas fa-envelope"></i> Email: info@warehouse.com</li>
+                  <li><i class="fas fa-phone"></i> Telepon: 123-456-7890</li>
+                </ul>
+              </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

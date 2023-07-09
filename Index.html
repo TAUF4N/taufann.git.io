@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Halaman Utama</title>
+    <!-- Tautkan Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        *html, body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        .navbar-brand img {
+            height: 75px; /* Ubah ukuran logo sesuai keinginan */
+        }
+        
+        .navbar-nav .nav-item {
+            margin-right: 10px;
+        }
+        
+        .navbar-nav .nav-link {
+            padding: 5px 10px;
+        }
+    
+        /* content */
+        .content {
+            font-family: 'Times New Roman', Times, serif;
+            margin-left: 20px; /* Menggeser konten ke kiri */
+        }
+    
+        .rounded-image {
+            border-radius: 10px;
+        }
+
+        p {
+            margin-top: 20px;
+        }
+
+        button {
+            margin-top: 30px;
+        }
+
+        .form {
+            margin-top: 80px;
+            background-image: linear-gradient();
+        }
+    
+         /* footer */
+        .footer {
+            width: 100%;
+            background-image: linear-gradient(180deg, #505467 0, #1f3259 50%, #00154b 100%);
+            margin-top: 50px;
+            border-top: 1px solid whitesmoke; /* Menambahkan pemisah warna tipis di bagian atas footer */
+        }
+    
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+    
+        /* Mengubah warna ikon saat tidak diklik */
+        .social-links a {
+            color: white;
+        }
+    
+        /* Menghilangkan gaya default tautan */
+        .social-links a {
+            text-decoration: none;
+        }
+    
+        h4 {
+            color: white;
+            margin-top: 20px;
+        }
+        
+        .footer ul li a {
+            text-transform: capitalize;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="brande.png" alt="Logo Brand" height="30" class="d-inline-block align-top" id="logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="Index.html"><i class="fas fa-home"></i>Beranda</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about us.html"><i class="fas fa-info-circle"></i>Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="layanan.html"><i class="fas fa-cogs"></i>Layanan</a>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-language"></i>Bahasa
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <a class="dropdown-item" href="#" onclick="changeLanguage('English')">English</a>
+                        <a class="dropdown-item" href="#" onclick="changeLanguage('Indonesia')">Indonesia</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <form class="form-inline my-2 my-lg-0">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <input class="form-control mr-sm-2 search-icon" type="search" placeholder="Search" aria-label="Search">
+                        </button>                                    
+                    </div>
+                </form>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!--ini adalah content-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h1 class="text-center" id="heading">Warehouse Management System</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="warehouse mangement.jpeg" alt="Gambar" class="img-fluid rounded-image">
+
+            <p><i class="far far fa-calendar-check"></i> Penjadwalan & pelacakan</p>
+                <ul>
+                  <li><i class="fas fa-fire-alt"></i> Memungkinkan penjadwalan kunjungan atau layanan secara efisien.</li>
+                  <li><i class="fas fa-fire-alt"></i> Melacak status kunjungan atau layanan untuk memastikan kepatuhan waktu dan pemenuhan yang tepat.</li>
+                  <li><i class="fas fa-fire-alt"></i> Mengoptimalkan rute kunjungan untuk menghemat waktu dan sumber daya.</li>
+                </ul>
+        </div>
+        <div class="col-md-6">
+            <p id="description">Warehouse Management System (WMS) adalah sebuah software berbasis cloud yang memberikan kemudahan bagi bisnis manufaktur, ritel, dan distributor untuk dapat mengawasi aktifitas pergudangan secara real-time. Hal tersebut meliputi proses stok barang datang hingga persiapan stok barang untuk proses pengiriman.</p>
+            <p><strong>Fiture Utama:</strong></p>
+            <p><i class="fas fa-database"></i> pengumpulan data kunjungan</p>
+                <ul>
+                  <li><i class="fas fa-fire-alt"></i> Menggunakan teknologi geo-tagging untuk memverifikasi lokasi kunjungan.</li>
+                  <li><i class="fas fa-fire-alt"></i> Mengumpulkan data kunjungan seperti tanggal, waktu, dan lokasi kunjungan.</li>
+                </ul>
+
+            <p><i class="fas fa-store"></i> Otomasi pesanan penjualan</p>
+                <ul>
+                  <li><i class="fas fa-fire-alt"></i> Mengotomatisasi proses pesanan penjualan untuk meningkatkan efisiensi.</li>
+                  <li><i class="fas fa-fire-alt"></i> Memungkinkan pelanggan untuk melakukan pemesanan secara mandiri melalui platform atau aplikasi.</li>
+                  <li><i class="fas fa-fire-alt"></i> Mengintegrasikan sistem inventarisasi untuk memastikan ketersediaan produk yang dipesan.</li>
+                </ul>
+
+            <button type="submit" class="btn btn-primary">Mau Lebih!</button>
+        </div>
+    </div>
+
+    <!-- Bagian tambahan formulir -->
+    <div class="row">
+        <div class="col-md-12 form">
+            <h2>jika ingin lebih!! Ayo daftarkan dirimu sekarang</h2>
+            <form>
+                <div class="form-group">
+                    <label for="nama">Nama:</label>
+                    <input type="text" class="form-control" id="nama" placeholder="Masukkan nama Anda">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Masukkan alamat email Anda">
+                </div>
+                <div class="form-group">
+                    <label for="pesan">Pesan:</label>
+                    <textarea class="form-control" id="pesan" rows="5" placeholder="Masukkan pesan Anda"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+            </form>
+        </div>
+    </div>
+</div>
+    
+<!--ini adalah footer-->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h4>Ikuti Kami</h4>
+                <div class="social-links">
+                    <a href="/" style="color: wheat;"><i class="fab fa-facebook"></i></a>
+                    <a href="/" style="color: wheat;"><i class="fab fa-instagram"></i></a>
+                    <a href="/" style="color: wheat;"><i class="fab fa-whatsapp"></i></a>
+                    <a href="/" style="color: wheat;"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h4>Layanan</h4>
+                <ul>
+                  <li><a href="#" style="color: wheat;"><i class="fa-flopy-disk"></i>Pengiriman</a></li>
+                  <li><a href="#" style="color: wheat;"><i class="fa-flopy-disk"></i>Penyimpanan</a></li>
+                  <li><a href="#" style="color: wheat;"><i class="fa-flopy-disk"></i>Logistik</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h4>Industri</h4>
+                <ul>
+                  <li><a href="#" style="color: wheat;"><i class="fa-solid fas fa-truck"></i> Otomotif</a></li>
+                  <li><a href="#" style="color: wheat;"><i class="far fa-lightbulb"></i> Elektronik</a></li>
+                  <li><a href="#" style="color: wheat;"><i class="fas fa-tshirt"></i> Fashion</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h4>Kontak Kami</h4>
+                <ul>
+                  <li style="color: wheat;"><i class="fas fa-map-marker-alt"></i> Alamat: Jalan Raya No. 123, Kota, Negara</li>
+                  <li style="color: wheat;"><i class="fas fa-envelope"></i> Email: info@warehouse.com</li>
+                  <li style="color: wheat;"><i class="fas fa-phone"></i> Telepon: 123-456-7890</li>
+                </ul>
+              </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Tautkan Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.sidebar').hide(); // Sembunyikan sidebar secara default
+
+        $('#logo').click(function() {
+            $('.sidebar').slideToggle(); // Tampilkan atau sembunyikan sidebar ketika logo di klik
+            $('.content').toggleClass('show');
+            $('.sidebar').toggleClass('show'); // Tambahkan perintah ini untuk menambah atau menghapus kelas "show" pada sidebar
+        });
+    });
+</script>
+<script>
+    function changeLanguage(language) {
+        // Perintahkan JavaScript untuk mengubah data ke bahasa yang diinginkan di sini
+        // Anda dapat menggunakan if-else atau switch untuk memeriksa bahasa yang dipilih
+        // dan mengubah konten sesuai dengan bahasa tersebut
+        if (language === 'English') {
+            // Mengubah konten ke bahasa Inggris
+            document.getElementById('heading').innerHTML = 'Warehouse Management System';
+            document.getElementById('description').innerHTML = 'Warehouse Management System (WMS) is a cloud-based software that provides convenience for manufacturing, retail, and distribution businesses to monitor warehouse activities in real-time. This includes the process of incoming stock until preparing stock for shipping.';
+            // Tambahkan perubahan bahasa lainnya di sini sesuai kebutuhan
+        } else if (language === 'Indonesia') {
+            // Mengubah konten ke bahasa Indonesia
+            document.getElementById('heading').innerHTML = 'Sistem Manajemen Gudang';
+            document.getElementById('description').innerHTML = 'Sistem Manajemen Gudang (WMS) adalah perangkat lunak berbasis cloud yang memberikan kemudahan bagi bisnis manufaktur, ritel, dan distributor untuk memantau aktivitas gudang secara real-time. Hal ini mencakup proses stok barang masuk hingga persiapan stok barang untuk pengiriman.';
+            // Tambahkan perubahan bahasa lainnya di sini sesuai kebutuhan
+        }
+    }
+</script>
+</body>
+</html>

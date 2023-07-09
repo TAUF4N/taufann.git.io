@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Tentang Kami</title>
+  <style>
+    .navbar-brand img {
+      margin-left: 20px;
+      height: 75px; /* Ubah ukuran logo sesuai keinginan */
+    }
+
+    .navbar-nav {
+      margin-left: auto;
+    }
+
+    .navbar-nav .nav-item {
+      margin-right: 20px;
+    }
+
+    .navbar-nav .nav-link {
+      padding: 5px 10px;
+      padding-right: 15px; /* Sesuaikan nilai padding kanan */
+      padding-left: 15px; /* Sesuaikan nilai padding kiri */
+    }
+
+     /* footer */
+     .footer {
+            width: 100%;
+            background-image: linear-gradient(180deg, #505467 0, #1f3259 50%, #00154b 100%);
+            margin-top: 50px;
+            border-top: 1px solid whitesmoke; /* Menambahkan pemisah warna tipis di bagian atas footer */
+        }
+    
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+    
+        /* Mengubah warna ikon saat tidak diklik */
+        .social-links a {
+            color: white;
+        }
+    
+        /* Menghilangkan gaya default tautan */
+        .social-links a {
+            text-decoration: none;
+        }
+    
+        h4 {
+            color: white;
+        }
+        
+        .footer ul li a {
+            text-transform: capitalize;
+            color: white;
+        }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="brande.png" alt="Logo Brand" height="30" class="d-inline-block align-top" id="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="Index.html"><i class="fas fa-home"></i>Beranda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about us.html"><i class="fas fa-info-circle"></i>Tentang Kami</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="layanan.html"><i class="fas fa-cogs"></i>Layanan</a>
+        </li>
+        <!--bahasa-->
+        <li class="nav-item">
+          <div class="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-language"></i>Bahasa
+            </a>
+            <div class="dropdown-menu" aria-labelledby="languageDropdown">
+              <a class="dropdown-item" href="#" onclick="changeLanguage('English')">English</a>
+              <a class="dropdown-item" href="#" onclick="changeLanguage('Indonesia')">Indonesia</a>
+            </div>
+          </div>
+        </li>
+
+        <!--cari-->
+        <li class="nav-item">
+          <form class="form-inline my-2 my-lg-0">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+              <input class="form-control mr-sm-2 search-icon" type="search" placeholder="Search"
+                aria-label="Search">
+              </button>
+            </div>
+          </form>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<!--content => bag 1-->
+    <div class="container mt-4 mb-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="d-flex align-items-center">
+                    <h1 class="elementor-heading-title elementor-size-xl">
+                        <strong style="color: rgba(139, 87, 23, 0.753);">WAREHOUSE</strong> membantu bisnis Anda berkembang
+                    </h1>
+                </div>
+                <div class="elementor-element elementor-element-89e0810 elementor-widget elementor-widget-text-editor" data-id="89e0810" data-element_type="widget" data-widget_type="text-editor.default">
+                    <div class="elementor-widget-container">
+                        <div class="elementor-text-editor elementor-clearfix">
+                            <p><strong>Solusi Utama untuk Pertumbuhan Bisnis Anda.</strong></p>
+                            <p>Ucapkan selamat tinggal pada proses manual. Mulai alihkan manajemen jaringan distribusi Anda ke sistem otomatis. Dengan kemudahan penggunaan, Advotics akan menjawab kebutuhan dari berbagai lapisan distribusi. Sistem kami membantu Anda mengambil keputusan berbasis data &amp; merekam aktivitas lapangan untuk meningkatkan kinerja bisnis Anda.</p>			
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <img src="advo-membantu-bisnis.png" alt="Gambar" style="max-width: 100%; height: auto;">
+            </div>
+        </div>
+    </div>
+    
+    <!--Bag 2-->
+    <div class="container mt-4 mb-4">
+        <div class="row">
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <img src="visi-misi.png" alt="Gambar" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex align-items-center">
+                    <h1 class="elementor-heading-title elementor-size-xl">
+                        <strong style="color: rgba(139, 87, 23, 0.753);">Visi-Misi</strong>
+                    </h1>
+                </div>
+                <div class="elementor-element elementor-element-89e0810 elementor-widget elementor-widget-text-editor" data-id="89e0810" data-element_type="widget" data-widget_type="text-editor.default">
+                    <div class="elementor-widget-container">
+                        <div class="elementor-text-editor elementor-clearfix">
+                            <p>Memberikan solusi terbaik untuk mengatasi tantangan terbesar dalam rantai distribusi dan sistem operasional perusahaan Anda dengan teknologi modern.</p>			
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Bag 3-->
+    <div class="container mt-4 mb-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="d-flex align-items-center">
+                    <h1 class="elementor-heading-title elementor-size-xl">
+                        <strong style="color: rgba(139, 87, 23, 0.753);">Cerita Kami</strong>
+                    </h1>
+                </div>
+                <div class="elementor-element elementor-element-89e0810 elementor-widget elementor-widget-text-editor" data-id="89e0810" data-element_type="widget" data-widget_type="text-editor.default">
+                    <div class="elementor-widget-container">
+                        <div class="elementor-text-editor elementor-clearfix">
+                            <p>Didirikan pada tahun 2020, kami berangkat dari kegelisahan terhadap permasalahan dalam rantai pasok. Mulai dari pemalsuan produk hingga sulitnya memantau jalur pendistribusian barang. Kami berkolaborasi dengan para pelaku bisnis untuk menciptakan solusi berbasis teknologi software modern dan IoT.</p>
+
+                            <p>Kini, kami telah memiliki lebih dari 70 klien yang berasal dari beragam industri mulai dari FMCG, konstruksi & bangunan, otomotif, dan berbagai industri lain. Atas solusi dan implementasi kami, beberapa penghargaan telah kami dapatkan, seperti Global Best Practice Award dari Danone Global, Perwakilan Startup Indonesia pada G20 Innovation League, Supply Chain Tech Partner untuk Federal Oil, serta Supply Chain Ideation Lab & Fast Forward Tech Partner atas Philip Morris Sampoerna</p>			
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <img src="cerita-kami.png" alt="Gambar" style="max-width: 100%; height: auto;">
+            </div>
+        </div>
+    </div>
+
+    <!--Bag 4-->
+    <div class="container mt-4">
+        <div class="row">
+            <h2 class="text-center">Pencapaian Kami Saat Ini</h2>
+            <div class="col-md-12 d-flex align-items-center justify-content-center">
+                <img src="informasi grafik.jpg" alt="Gambar Baru" style="max-width: 100%; height: auto;">
+            </div>
+        </div>
+    </div>
+  </div>
+  
+
+<!--ini adalah footer-->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h4>Ikuti Kami</h4>
+                <div class="social-links">
+                    <a href="/" style="color: white;"><i class="fab fa-facebook"></i></a>
+                    <a href="/" style="color: white;"><i class="fab fa-instagram"></i></a>
+                    <a href="/" style="color: white;"><i class="fab fa-whatsapp"></i></a>
+                    <a href="/" style="color: white;"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h4>Layanan</h4>
+                <ul>
+                  <li><a href="#">Pengiriman</a></li>
+                  <li><a href="#">Penyimpanan</a></li>
+                  <li><a href="#">Logistik</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h4>Industri</h4>
+                <ul>
+                  <li><a href="#">Otomotif</a></li>
+                  <li><a href="#">Elektronik</a></li>
+                  <li><a href="#">Fashion</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h4>Kontak Kami</h4>
+                <ul style="color: wheat">
+                  <li><i class="fas fa-map-marker-alt"></i> Alamat: Jalan Raya No. 123, Kota, Negara</li>
+                  <li><i class="fas fa-envelope"></i> Email: info@warehouse.com</li>
+                  <li><i class="fas fa-phone"></i> Telepon: 123-456-7890</li>
+                </ul>
+              </div>
+        </div>
+    </div>
+</footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function changeLanguage(language) {
+      if (language === 'English') {
+        document.getElementById('heading').innerHTML = 'Tentang Kami';
+        document.getElementById('description').innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum ullamcorper erat ac commodo. Proin sit amet lacinia turpis. In non mauris a nisl commodo egestas. Integer iaculis lorem vel tortor finibus eleifend. Duis ac urna risus. Vestibulum convallis ullamcorper mauris nec suscipit. Nunc congue mi ipsum, at venenatis mi bibendum nec.';
+      } else if (language === 'Indonesia') {
+        document.getElementById('heading').innerHTML = 'About Us';
+        document.getElementById('description').innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum ullamcorper erat ac commodo. Proin sit amet lacinia turpis. In non mauris a nisl commodo egestas. Integer iaculis lorem vel tortor finibus eleifend. Duis ac urna risus. Vestibulum convallis ullamcorper mauris nec suscipit. Nunc congue mi ipsum, at venenatis mi bibendum nec.';
+      }
+    }
+  </script>
+</body>
+
+</html>
